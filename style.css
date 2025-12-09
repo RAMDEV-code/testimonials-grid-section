@@ -75,13 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: var(--color-neutral-Grey-200);
+    background-color: var(--color-neutral-Grey-100);
     font-size: var(--fs-general);
     font-family: var(--ff-general);
 }
 
 .flexcontainer {
-  margin: 5rem;
+  width: 22rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -90,7 +93,9 @@ h1 {
 
 .cards {
     width: 20rem;
-    margin: 1.5rem auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2rem;
     border-radius: .5rem;
 }
@@ -138,11 +143,6 @@ img {
 
 
 @media (min-width: 600px) {
-
-  body {
-    background-color: var(--color-neutral-Grey-400);
-  }
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -185,4 +185,36 @@ img {
     height: 41.5rem;
     padding: 55px;
 }
+}
+
+@media (max-width: 900px) {
+.container {
+  display: block;
+}
+
+.flexcontainer {
+  display: block;
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexgroup1 {
+  display: block;
+}
+
+.flexgroupmiddle {
+  display: block;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.cards {
+    width: 20rem;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
 }
