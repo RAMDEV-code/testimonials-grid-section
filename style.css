@@ -1,0 +1,179 @@
+:root {
+    /* Primary */
+
+--color-Purple-50: hsl(260, 100%, 95%);
+--color-Purple-300: hsl(264, 82%, 80%);
+--color-Purple-500: hsl(263, 55%, 52%);
+
+/* ### Neutral */
+
+--color-neutral-White: hsl(0, 0%, 100%);
+--color-neutral-Grey-100: hsl(214, 17%, 92%);
+--color-neutral-Grey-200: hsl(0, 0%, 81%);
+--color-neutral-Grey-400: hsl(224, 10%, 45%);
+--color-neutral-Grey-500: hsl(217, 19%, 35%);
+--color-neutral-Darkblue: hsl(219, 29%, 14%);
+--color-neutral-Black: hsl(0, 0%, 7%);
+
+/* font */
+
+--fw-bold: 600;
+--fw-medium: 500;
+
+--fs-general: 13px;
+
+--ff-general: "Barlow Semi Condensed", sans-serif;
+
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+    background-color: var(--color-neutral-Grey-200);
+    font-size: var(--fs-general);
+    font-family: var(--ff-general);
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.cards {
+    width: 20rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.cards h2 {
+    margin-bottom: 1.5rem;
+}
+
+img {
+    border-radius: 10em;
+}
+.grid {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.first__card {
+  color: var(--color-neutral-White);
+  background-color: var(--color-Purple-500);
+}
+ .second__card {
+  color: var(--color-neutral-White);
+  background-color: var(--color-neutral-Grey-500);
+ }
+.third__card {
+  background-color: var(--color-neutral-White);
+  color: var(--color-neutral-Grey-400);
+}
+.fourth__card {
+  background-color: var(--color-neutral-Darkblue);
+  color: var(--color-neutral-Grey-100);
+}
+.fourth__card img {
+  border: 3px solid var(--color-Purple-500);
+}
+.fifth__card {
+  background-color: var(--color-neutral-White);
+  color: var(--color-neutral-Grey-500);
+}
+
+
+@media (min-width: 600px) {
+
+  body {
+    background-color: var(--color-neutral-Grey-400);
+  }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flexcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}  
+
+.flexgroup1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flexgroupmiddle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards {
+  margin: 15px;
+}
+
+.first__card {
+    display: inline-block;
+    width: 600px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 440px;
+}
+
+.fourth__card {
+    display: inline-block;
+    width: 600px;
+}
+.fifth__card {
+    display: inline-block;
+    padding: 50px;
+}
+}
