@@ -80,13 +80,17 @@ body {
     font-family: var(--ff-general);
 }
 
+.flexcontainer {
+  margin: 5rem;
+}
+
 h1 {
     font-size: 1rem;
 }
 
 .cards {
     width: 20rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding: 2rem;
     border-radius: .5rem;
 }
@@ -108,6 +112,10 @@ img {
   color: var(--color-neutral-White);
   background-color: var(--color-Purple-500);
 }
+
+.first__card img {
+  border: 2px solid var(--color-Purple-300);
+}
  .second__card {
   color: var(--color-neutral-White);
   background-color: var(--color-neutral-Grey-500);
@@ -121,7 +129,7 @@ img {
   color: var(--color-neutral-Grey-100);
 }
 .fourth__card img {
-  border: 3px solid var(--color-Purple-500);
+  border: 2px solid var(--color-Purple-500);
 }
 .fifth__card {
   background-color: var(--color-neutral-White);
@@ -143,9 +151,9 @@ img {
 .flexcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1rem;
-}  
-
+    margin: 3rem;
+    margin-top: 5rem;
+}
 .flexgroup1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,12 +165,12 @@ img {
 }
 
 .cards {
-  margin: 15px;
+  margin: 10px;
 }
 
 .first__card {
     display: inline-block;
-    width: 600px;
+    width: 550px;
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: 440px;
@@ -170,10 +178,11 @@ img {
 
 .fourth__card {
     display: inline-block;
-    width: 600px;
+    width: 550px;
 }
 .fifth__card {
     display: inline-block;
-    padding: 50px;
+    height: 41.5rem;
+    padding: 55px;
 }
 }
